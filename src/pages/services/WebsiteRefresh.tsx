@@ -5,7 +5,7 @@ export default function WebsiteRefresh() {
   const features = [
     {
       title: 'Modern, Responsive Design',
-      description: 'Beautiful websites that work flawlessly on all devices, from smartphones to desktop computers.',
+      description: 'Beautiful websites that work flawlessly on all devices, from smartphones to desktops.',
       icon: '📱'
     },
     {
@@ -64,9 +64,9 @@ export default function WebsiteRefresh() {
   return (
     <>
       <SEO
-        title="Website Refresh & Design Services"
-        description="Transform your online presence with our professional website refresh services. Custom WordPress development, e-commerce solutions, and responsive design with 15-day delivery. Serving Brooklyn and beyond."
-        keywords="website refresh, website redesign, WordPress development, e-commerce website, responsive web design, Brooklyn web design"
+        title="Website Refresh & Design Services Brooklyn | 15-Day Delivery"
+        description="Refresh your website in 15 days. Custom WordPress development, e-commerce solutions, and responsive design. Serving Brooklyn, Crown Heights, Park Slope & NYC. Free consultation."
+        keywords="website refresh Brooklyn, website redesign NYC, WordPress development Brooklyn, e-commerce website Brooklyn, responsive web design, Brooklyn web design, website redesign Crown Heights"
         schema={schema}
       />
 
@@ -77,7 +77,7 @@ export default function WebsiteRefresh() {
               Website Refresh & Design
             </h1>
             <p className="text-xl mb-8 text-primary-100">
-              Modern, responsive websites that drive results. Custom WordPress development and e-commerce solutions delivered in 15 days.
+              Modern, responsive websites that drive results. Custom WordPress and e-commerce solutions delivered in just 15 days.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50">
@@ -98,7 +98,7 @@ export default function WebsiteRefresh() {
               Why Refresh Your Website?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Your website is often the first impression potential customers have of your business. A modern, professional website builds trust and drives conversions.
+              Your website is your customers' first impression. A modern, professional design builds trust and increases sales by up to 400%.
             </p>
           </div>
 
@@ -129,7 +129,7 @@ export default function WebsiteRefresh() {
                   <div>
                     <h3 className="font-bold text-lg mb-2">Discovery & Planning</h3>
                     <p className="text-gray-600">
-                      We learn about your business, goals, and target audience to create the perfect website strategy.
+                      We analyze your business goals and target audience to build a data-driven website strategy.
                     </p>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ export default function WebsiteRefresh() {
                   <div>
                     <h3 className="font-bold text-lg mb-2">Design & Development</h3>
                     <p className="text-gray-600">
-                      Our team creates a beautiful, functional website tailored to your brand and business needs.
+                      We create a beautiful, functional website tailored to your brand and business needs.
                     </p>
                   </div>
                 </div>
@@ -179,7 +179,7 @@ export default function WebsiteRefresh() {
                 ))}
               </div>
               <p className="text-gray-700 mb-6">
-                We have experience across many industries and can create a website perfectly suited to your business.
+                We have experience across many industries. We'll create a website perfectly suited to your Brooklyn business.
               </p>
               <Link to="/portfolio" className="btn btn-primary w-full text-center">
                 View Our Portfolio
@@ -313,7 +313,7 @@ export default function WebsiteRefresh() {
             Ready to Refresh Your Website?
           </h2>
           <p className="text-xl mb-8 text-primary-100 max-w-2xl mx-auto">
-            Get a beautiful, modern website delivered in just 15 days. Contact us today for a free consultation.
+            Get your beautiful, modern website delivered in 15 days. Contact us today for a free consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50">

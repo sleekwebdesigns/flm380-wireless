@@ -5,7 +5,7 @@ export default function AISolutions() {
   const solutions = [
     {
       title: 'AI Chatbots',
-      description: 'Intelligent chatbots that provide 24/7 customer support and improve engagement.',
+      description: 'Smart chatbots that provide 24/7 customer support and boost engagement.',
       icon: '💬'
     },
     {
@@ -28,9 +28,9 @@ export default function AISolutions() {
   return (
     <>
       <SEO
-        title="AI Solutions - Leverage Artificial Intelligence"
-        description="Transform your business with cutting-edge AI solutions. AI chatbots, content generation, personalization, and predictive analytics to enhance your digital presence and automate tasks."
-        keywords="AI solutions, artificial intelligence, AI chatbots, AI content generation, machine learning, AI marketing automation"
+        title="AI Solutions Brooklyn | AI Chatbots & Marketing Automation"
+        description="Transform your Brooklyn business with AI solutions. AI chatbots, content generation, personalization, and analytics. Automate your marketing and save 60% on manual tasks. Free consultation."
+        keywords="AI solutions Brooklyn, AI chatbots, AI marketing automation, artificial intelligence NYC, AI content generation, machine learning Brooklyn, business automation"
       />
 
       <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
@@ -40,7 +40,7 @@ export default function AISolutions() {
               AI Solutions
             </h1>
             <p className="text-xl mb-8 text-primary-100">
-              Leverage cutting-edge artificial intelligence to enhance your digital presence and automate your marketing.
+              Use AI to strengthen your digital presence and automate your marketing tasks.
             </p>
             <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50">
               Explore AI Solutions
@@ -56,7 +56,7 @@ export default function AISolutions() {
               AI-Powered Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Transform your business operations with intelligent automation and data-driven insights.
+              Automate your business operations and make smarter decisions with AI-powered insights.
             </p>
           </div>
 
@@ -102,7 +102,7 @@ export default function AISolutions() {
             Ready to Embrace AI?
           </h2>
           <p className="text-xl mb-8 text-primary-100 max-w-2xl mx-auto">
-            Schedule a consultation to learn how AI can transform your business.
+            Schedule your consultation to learn how AI can grow your Brooklyn business.
           </p>
           <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50">
             Get AI Consultation

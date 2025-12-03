@@ -5,13 +5,13 @@ export default function SEOServices() {
   const services = [
     {
       title: 'Local SEO',
-      description: 'Dominate local search results and attract nearby customers to your business.',
+      description: 'Dominate local Brooklyn search results and attract nearby customers to your business.',
       icon: '📍',
       features: ['Google Business optimization', 'Local citations', 'Location-based keywords', 'Local link building']
     },
     {
       title: 'Technical SEO',
-      description: 'Optimize your website structure and performance for better search engine rankings.',
+      description: 'Optimize your website structure and speed for higher search engine rankings.',
       icon: '⚙️',
       features: ['Site speed optimization', 'Mobile optimization', 'Schema markup', 'XML sitemaps']
     },
@@ -43,9 +43,9 @@ export default function SEOServices() {
   return (
     <>
       <SEO
-        title="SEO Services - Boost Your Online Visibility"
-        description="Comprehensive SEO services to improve your search engine rankings. Local SEO, technical optimization, content strategy, and link building. Get found by customers searching for your services."
-        keywords="SEO services, local SEO, search engine optimization, technical SEO, content marketing, link building, Brooklyn SEO"
+        title="SEO Services Brooklyn | Rank Higher on Google | Local SEO NYC"
+        description="Improve your Google rankings with proven SEO strategies. Local Brooklyn SEO, technical optimization, and content strategy. Serving Crown Heights, Park Slope & NYC. Free SEO audit."
+        keywords="SEO services Brooklyn, local SEO Brooklyn, search engine optimization NYC, Brooklyn SEO company, SEO services Crown Heights, Park Slope SEO, technical SEO Brooklyn"
         schema={schema}
       />
 
@@ -56,7 +56,7 @@ export default function SEOServices() {
               SEO Services
             </h1>
             <p className="text-xl mb-8 text-primary-100">
-              Boost your online visibility and attract more customers with strategic SEO optimization.
+              Increase your online visibility and attract more Brooklyn customers with strategic SEO.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50">
@@ -77,7 +77,7 @@ export default function SEOServices() {
               Our SEO Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive SEO solutions to help your business rank higher and attract more organic traffic.
+              Our SEO strategies rank your business higher on Google and drive 3x more organic traffic.
             </p>
           </div>
 
@@ -224,7 +224,7 @@ export default function SEOServices() {
             Ready to Improve Your Rankings?
           </h2>
           <p className="text-xl mb-8 text-primary-100 max-w-2xl mx-auto">
-            Get a free SEO audit and discover how we can help you rank higher in search results.
+            Get your free SEO audit and discover how we can rank you higher on Google.
           </p>
           <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50">
             Get Your Free SEO Audit

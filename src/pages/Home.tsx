@@ -33,21 +33,21 @@ export default function Home() {
   const services = [
     {
       title: 'Website Refresh',
-      description: 'Modern, responsive websites built with the latest technologies. Custom WordPress development and e-commerce solutions.',
+      description: 'Modern, responsive websites built with the latest technologies. Custom WordPress development and full-featured e-commerce stores.',
       icon: '🎨',
       link: '/services/website-refresh',
       features: ['15-day delivery', 'Mobile-first design', 'Custom WordPress', 'E-commerce ready']
     },
     {
       title: 'SEO Services',
-      description: 'Boost your online visibility with comprehensive SEO strategies. Local and national SEO optimization.',
+      description: 'Increase your Google rankings with proven SEO strategies. Local Brooklyn SEO and national optimization.',
       icon: '📈',
       link: '/services/seo',
       features: ['Local SEO', 'Technical SEO', 'Content strategy', 'Link building']
     },
     {
       title: 'AI Solutions',
-      description: 'Leverage cutting-edge AI technology to enhance your digital presence and automate marketing tasks.',
+      description: 'Use AI technology to strengthen your digital presence and automate your marketing tasks.',
       icon: '🤖',
       link: '/services/ai-solutions',
       features: ['AI chatbots', 'Content generation', 'Personalization', 'Automation']
@@ -83,9 +83,9 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Brooklyn's Premier Web Design & Digital Marketing Agency"
-        description="Sleek Web Designs creates beautiful, effective websites with 15-day delivery. Expert SEO, AI solutions, and Google Business optimization. Over 5 years serving Brooklyn and beyond."
-        keywords="web design Brooklyn, digital marketing, SEO services, AI solutions, Google Business Profile, WordPress development, website design NYC"
+        title="Brooklyn Web Design | 15-Day Delivery | Sleek Web Designs NYC"
+        description="Brooklyn's #1 web design agency. 1,770+ websites delivered in 15 days. Custom WordPress, SEO & AI solutions. Serving Crown Heights, Park Slope & all NYC. Free consultation."
+        keywords="web design Brooklyn, Brooklyn web design agency, website design NYC, WordPress development Brooklyn, SEO services Brooklyn, web design Crown Heights, Park Slope web design, digital marketing Brooklyn"
         schema={schema}
       />
 
@@ -99,7 +99,7 @@ export default function Home() {
               15-Day Website Delivery Guarantee
             </p>
             <p className="text-lg sm:text-xl mb-8 text-primary-50">
-              Brooklyn's premier web design and digital marketing agency. Creating beautiful, effective websites for over 5 years.
+              Brooklyn's trusted web design and digital marketing partner since 2018. We've delivered 1,770+ beautiful, high-converting websites in just 15 days.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50 text-lg px-8 py-4">
@@ -134,7 +134,7 @@ export default function Home() {
               Our Services
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Comprehensive digital solutions to help your business thrive online
+              Complete digital solutions to grow your Brooklyn business online
             </p>
           </div>
 
@@ -183,7 +183,7 @@ export default function Home() {
                   <div>
                     <h3 className="font-bold text-xl mb-2">Fast 15-Day Delivery</h3>
                     <p className="text-gray-600">
-                      Get your professional website live in just 15 days. We work efficiently without compromising quality.
+                      Launch your professional website in 15 days. Our proven process delivers quality and speed.
                     </p>
                   </div>
                 </div>
@@ -194,7 +194,7 @@ export default function Home() {
                   <div>
                     <h3 className="font-bold text-xl mb-2">Results-Driven Approach</h3>
                     <p className="text-gray-600">
-                      We focus on delivering websites that convert visitors into customers and drive real business growth.
+                      Our websites convert visitors into customers and grow your business.
                     </p>
                   </div>
                 </div>
@@ -205,7 +205,7 @@ export default function Home() {
                   <div>
                     <h3 className="font-bold text-xl mb-2">Brooklyn-Based Expertise</h3>
                     <p className="text-gray-600">
-                      Over 5 years serving Brooklyn businesses and beyond with personalized, affordable solutions.
+                      Since 2018, we've served 1,770+ Brooklyn businesses with personalized, affordable solutions.
                     </p>
                   </div>
                 </div>
@@ -214,7 +214,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-8 lg:p-12">
               <h3 className="text-2xl font-display font-bold mb-6">Ready to Get Started?</h3>
               <p className="text-gray-700 mb-6">
-                Let's discuss your project and create a custom solution that fits your needs and budget.
+                We'll create a custom solution that fits your needs and budget.
               </p>
               <Link to="/contact" className="btn btn-primary w-full text-center mb-4">
                 Request Free Consultation
@@ -306,7 +306,7 @@ export default function Home() {
             Ready to Transform Your Online Presence?
           </h2>
           <p className="text-xl mb-8 text-primary-100 max-w-2xl mx-auto">
-            Contact us today for a free consultation and discover how we can help your business grow.
+            Get your free consultation today and discover how we can grow your Brooklyn business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50 text-lg px-8 py-4">

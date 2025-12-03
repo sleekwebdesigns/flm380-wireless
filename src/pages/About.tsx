@@ -5,9 +5,9 @@ export default function About() {
   return (
     <>
       <SEO
-        title="About Us - Brooklyn Web Design Agency"
-        description="Learn about Sleek Web Designs, Brooklyn's premier web design and digital marketing agency. Over 5 years of experience helping businesses succeed online."
-        keywords="about Sleek Web Designs, Brooklyn web design company, digital marketing agency Brooklyn"
+        title="About Us - Brooklyn Web Design Agency Since 2018"
+        description="Meet Sleek Web Designs, Brooklyn's trusted web design agency since 2018. We've helped 1,770+ businesses succeed online with our 15-day delivery guarantee."
+        keywords="about Sleek Web Designs, Brooklyn web design company, digital marketing agency Brooklyn, web design Crown Heights, Park Slope web designer"
       />
 
       <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
@@ -29,7 +29,7 @@ export default function About() {
                 Our Story
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                For over 5 years, Sleek Web Designs has been helping businesses in Brooklyn and beyond establish their online presence. We believe that every business deserves a beautiful, effective website that drives real results. Our team combines technical expertise with creative design to deliver websites that not only look great but also convert visitors into customers.
+                Since 2018, we've helped 1,770+ Brooklyn businesses succeed online. Every business deserves a website that looks beautiful and drives results. We design websites that attract visitors and convert them into loyal customers.
               </p>
             </div>
 
@@ -61,13 +61,13 @@ export default function About() {
               <div className="card">
                 <h3 className="text-xl font-bold mb-3">🎯 Quality First</h3>
                 <p className="text-gray-600">
-                  We never compromise on quality. Every website we create is built to the highest standards.
+                  We never compromise on quality. We build every website to the highest standards.
                 </p>
               </div>
               <div className="card">
                 <h3 className="text-xl font-bold mb-3">⏱️ Fast Delivery</h3>
                 <p className="text-gray-600">
-                  Our 15-day delivery guarantee means you get your website quickly without sacrificing quality.
+                  Our 15-day delivery guarantee gets your website live quickly without sacrificing quality.
                 </p>
               </div>
               <div className="card">
@@ -118,7 +118,7 @@ export default function About() {
             Ready to Work Together?
           </h2>
           <p className="text-xl mb-8 text-primary-100 max-w-2xl mx-auto">
-            Let's create something amazing for your business.
+            Let's create an amazing website for your Brooklyn business.
           </p>
           <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50">
             Get Started Today
