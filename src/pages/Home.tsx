@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import SEO from '../components/SEO'
+import LocalBusinessSchema from '../components/LocalBusinessSchema'
+import ServiceAreaSection from '../components/ServiceAreaSection'
 import { supabase } from '../lib/supabase'
 import { Testimonial, PortfolioProject } from '../types'
+import { BUSINESS_INFO } from '../config/business'
 
 export default function Home() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([])
@@ -82,6 +85,7 @@ export default function Home() {
 
   return (
     <>
+      <LocalBusinessSchema serviceType="WebDesign" />
       <SEO
         title="Brooklyn Web Design | 15-Day Delivery | Sleek Web Designs NYC"
         description="Brooklyn's #1 web design agency. 1,770+ websites delivered in 15 days. Custom WordPress, SEO & AI solutions. Serving Crown Heights, Park Slope & all NYC. Free consultation."
@@ -105,8 +109,8 @@ export default function Home() {
               <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50 text-lg px-8 py-4">
                 Get Your Free Consultation
               </Link>
-              <a href="tel:3474165655" className="btn btn-outline-white text-lg px-8 py-4">
-                Call (347) 416-5655
+              <a href={`tel:${BUSINESS_INFO.contact.phoneRaw.replace(/\D/g, '')}`} className="btn btn-outline-white text-lg px-8 py-4">
+                Call {BUSINESS_INFO.contact.phone}
               </a>
             </div>
             <div className="mt-12 flex flex-wrap justify-center gap-8 text-sm">
@@ -219,8 +223,8 @@ export default function Home() {
               <Link to="/contact" className="btn btn-primary w-full text-center mb-4">
                 Request Free Consultation
               </Link>
-              <a href="tel:3474165655" className="btn btn-secondary w-full text-center">
-                Call (347) 416-5655
+              <a href={`tel:${BUSINESS_INFO.contact.phoneRaw.replace(/\D/g, '')}`} className="btn btn-secondary w-full text-center">
+                Call {BUSINESS_INFO.contact.phone}
               </a>
             </div>
           </div>
@@ -299,6 +303,8 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      <ServiceAreaSection />
 
       <section className="section-padding bg-primary-600 text-white">
         <div className="container-custom text-center">

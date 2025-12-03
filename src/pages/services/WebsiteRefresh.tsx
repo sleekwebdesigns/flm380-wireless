@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO'
+import LocalBusinessSchema from '../../components/LocalBusinessSchema'
 import Breadcrumb from '../../components/Breadcrumb'
 import RelatedServices from '../../components/RelatedServices'
+import { BUSINESS_INFO } from '../../config/business'
 
 export default function WebsiteRefresh() {
   const features = [
@@ -82,6 +84,7 @@ export default function WebsiteRefresh() {
 
   return (
     <>
+      <LocalBusinessSchema serviceType="Website Design" />
       <Breadcrumb items={[
         { label: 'Services', path: '/pricing' },
         { label: 'Website Refresh', path: '/services/website-refresh' }
@@ -106,8 +109,8 @@ export default function WebsiteRefresh() {
               <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50">
                 Start Your Project
               </Link>
-              <a href="tel:3474165655" className="btn btn-outline-white">
-                Call (347) 416-5655
+              <a href={`tel:${BUSINESS_INFO.contact.phoneRaw.replace(/\D/g, '')}`} className="btn btn-outline-white">
+                Call {BUSINESS_INFO.contact.phone}
               </a>
             </div>
           </div>

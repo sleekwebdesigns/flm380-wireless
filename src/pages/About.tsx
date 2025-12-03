@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import LocalBusinessSchema from '../components/LocalBusinessSchema'
+import { BUSINESS_INFO } from '../config/business'
 
 export default function About() {
   return (
     <>
+      <LocalBusinessSchema />
       <SEO
         title="About Us - Brooklyn Web Design Agency Since 2018"
         description="Meet Sleek Web Designs, Brooklyn's trusted web design agency since 2018. We've helped 1,770+ businesses succeed online with our 15-day delivery guarantee."
@@ -96,8 +99,8 @@ export default function About() {
               Brooklyn, NY 11225
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:3474165655" className="btn btn-primary">
-                Call (347) 416-5655
+              <a href={`tel:${BUSINESS_INFO.contact.phoneRaw.replace(/\D/g, '')}`} className="btn btn-primary">
+                Call {BUSINESS_INFO.contact.phone}
               </a>
               <a
                 href="https://maps.app.goo.gl/UDwkRb9CDRPJEtFG7"

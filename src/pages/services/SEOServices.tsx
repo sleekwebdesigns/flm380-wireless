@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO'
+import LocalBusinessSchema from '../../components/LocalBusinessSchema'
 import Breadcrumb from '../../components/Breadcrumb'
 import RelatedServices from '../../components/RelatedServices'
+import { BUSINESS_INFO } from '../../config/business'
 
 export default function SEOServices() {
   const services = [
@@ -61,6 +63,7 @@ export default function SEOServices() {
 
   return (
     <>
+      <LocalBusinessSchema serviceType="SEO Services" />
       <Breadcrumb items={[
         { label: 'Services', path: '/pricing' },
         { label: 'SEO Services', path: '/services/seo' }
@@ -85,8 +88,8 @@ export default function SEOServices() {
               <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50">
                 Get Free SEO Audit
               </Link>
-              <a href="tel:3474165655" className="btn btn-outline-white">
-                Call (347) 416-5655
+              <a href={`tel:${BUSINESS_INFO.contact.phoneRaw.replace(/\D/g, '')}`} className="btn btn-outline-white">
+                Call {BUSINESS_INFO.contact.phone}
               </a>
             </div>
           </div>

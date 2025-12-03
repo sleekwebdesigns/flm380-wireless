@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import SEO from '../components/SEO'
+import LocalBusinessSchema from '../components/LocalBusinessSchema'
+import NAP from '../components/NAP'
 import { supabase } from '../lib/supabase'
 import { ClientInquiry } from '../types'
 
@@ -63,6 +65,7 @@ export default function Contact() {
 
   return (
     <>
+      <LocalBusinessSchema />
       <SEO
         title="Contact Us - Get Your Free Consultation"
         description="Contact Sleek Web Designs for a free consultation. Call (347) 416-5655. Located at 405 Rogers Ave Suite 101, Brooklyn, NY 11225."
@@ -218,26 +221,7 @@ export default function Contact() {
             <div className="space-y-6">
               <div className="card">
                 <h3 className="text-xl font-bold mb-4">Contact Information</h3>
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-sm text-gray-600 mb-1">Phone</p>
-                    <a href="tel:3474165655" className="text-lg font-semibold text-primary-600 hover:text-primary-700">
-                      (347) 416-5655
-                    </a>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-600 mb-1">Address</p>
-                    <a
-                      href="https://maps.app.goo.gl/UDwkRb9CDRPJEtFG7"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-primary-600 transition-colors"
-                    >
-                      405 Rogers Ave Suite 101<br />
-                      Brooklyn, NY 11225
-                    </a>
-                  </div>
-                </div>
+                <NAP variant="default" showMap={false} />
               </div>
 
               <div className="card bg-primary-50">

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO'
+import LocalBusinessSchema from '../../components/LocalBusinessSchema'
 import Breadcrumb from '../../components/Breadcrumb'
 import RelatedServices from '../../components/RelatedServices'
 
@@ -46,6 +47,7 @@ export default function AISolutions() {
 
   return (
     <>
+      <LocalBusinessSchema serviceType="AI Solutions" />
       <Breadcrumb items={[
         { label: 'Services', path: '/pricing' },
         { label: 'AI Solutions', path: '/services/ai-solutions' }

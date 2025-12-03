@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO'
+import LocalBusinessSchema from '../../components/LocalBusinessSchema'
 import Breadcrumb from '../../components/Breadcrumb'
 import RelatedServices from '../../components/RelatedServices'
 
@@ -23,6 +24,7 @@ export default function GoogleBusiness() {
 
   return (
     <>
+      <LocalBusinessSchema serviceType="Google Business Profile Optimization" />
       <Breadcrumb items={[
         { label: 'Services', path: '/pricing' },
         { label: 'Google Business Profile', path: '/services/google-business' }

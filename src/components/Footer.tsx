@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import NAP from './NAP'
+import { BUSINESS_INFO } from '../config/business'
 
 export default function Footer() {
   const currentYear = 2026
@@ -14,7 +16,7 @@ export default function Footer() {
               className="h-10 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-sm mb-4">
-              Brooklyn's premier web design and digital marketing agency. Creating beautiful, effective websites for over 5 years.
+              Brooklyn's trusted web design and digital marketing partner since 2018. Serving {BUSINESS_INFO.address.neighborhood}, Park Slope, and all of NYC.
             </p>
             <p className="text-sm">
               <strong>Web design that people love</strong>
@@ -80,34 +82,20 @@ export default function Footer() {
 
           <div>
             <h4 className="text-white font-semibold mb-4">Contact</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="tel:3474165655" className="hover:text-white transition-colors">
-                  (347) 416-5655
-                </a>
-              </li>
-              <li className="pt-2">
-                <a
-                  href="https://maps.app.goo.gl/UDwkRb9CDRPJEtFG7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
-                >
-                  405 Rogers Ave Suite 101<br />
-                  Brooklyn, NY 11225
-                </a>
-              </li>
-              <li className="pt-2">
-                <a
-                  href="https://www.sleekwebdesigns.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
-                >
-                  Visit Sleekwebdesigns.com
-                </a>
-              </li>
-            </ul>
+            <NAP variant="vertical" />
+            <div className="mt-4">
+              <a
+                href={BUSINESS_INFO.location.directionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-primary-400 hover:text-primary-300 transition-colors inline-flex items-center"
+              >
+                <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                </svg>
+                Get Directions
+              </a>
+            </div>
           </div>
         </div>
 
