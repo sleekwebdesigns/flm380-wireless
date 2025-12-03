@@ -265,9 +265,15 @@ export default function Contact() {
             <h2 className="text-3xl sm:text-4xl font-display font-bold mb-4">
               Visit Our Office
             </h2>
-            <p className="text-xl text-gray-600">
-              405 Rogers Ave Suite 101, Brooklyn, NY 11225
-            </p>
+            <a
+              href="https://maps.app.goo.gl/UDwkRb9CDRPJEtFG7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl text-gray-600 hover:text-primary-600 transition-colors duration-200 inline-block"
+            >
+              405 Rogers Ave Suite 101<br />
+              Brooklyn, NY 11225
+            </a>
           </div>
           <div className="max-w-4xl mx-auto">
             <div className="rounded-xl overflow-hidden shadow-lg">
