@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO'
+import Breadcrumb from '../../components/Breadcrumb'
+import RelatedServices from '../../components/RelatedServices'
 
 export default function AISolutions() {
   const solutions = [
@@ -25,8 +27,29 @@ export default function AISolutions() {
     }
   ]
 
+  const relatedServices = [
+    {
+      title: 'Website Refresh',
+      description: 'Integrate AI-powered features into your new or existing website.',
+      icon: '🎨',
+      link: '/services/website-refresh',
+      anchorText: 'Add AI to your website'
+    },
+    {
+      title: 'SEO Services',
+      description: 'Combine AI content generation with proven SEO strategies.',
+      icon: '📈',
+      link: '/services/seo',
+      anchorText: 'Explore SEO + AI solutions'
+    }
+  ]
+
   return (
     <>
+      <Breadcrumb items={[
+        { label: 'Services', path: '/pricing' },
+        { label: 'AI Solutions', path: '/services/ai-solutions' }
+      ]} />
       <SEO
         title="AI Solutions Brooklyn | AI Chatbots & Marketing Automation"
         description="Transform your Brooklyn business with AI solutions. AI chatbots, content generation, personalization, and analytics. Automate your marketing and save 60% on manual tasks. Free consultation."
@@ -95,6 +118,8 @@ export default function AISolutions() {
           </div>
         </div>
       </section>
+
+      <RelatedServices services={relatedServices} title="Maximize Your AI Investment" />
 
       <section className="section-padding bg-primary-600 text-white">
         <div className="container-custom text-center">

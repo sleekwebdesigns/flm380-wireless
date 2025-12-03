@@ -1,9 +1,32 @@
 import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO'
+import Breadcrumb from '../../components/Breadcrumb'
+import RelatedServices from '../../components/RelatedServices'
 
 export default function GoogleBusiness() {
+  const relatedServices = [
+    {
+      title: 'SEO Services',
+      description: 'Google Business optimization is part of a comprehensive local SEO strategy.',
+      icon: '📈',
+      link: '/services/seo',
+      anchorText: 'Discover our full SEO services'
+    },
+    {
+      title: 'Website Refresh',
+      description: 'Drive Google Business Profile visitors to a beautiful, high-converting website.',
+      icon: '🎨',
+      link: '/services/website-refresh',
+      anchorText: 'Build a website that converts'
+    }
+  ]
+
   return (
     <>
+      <Breadcrumb items={[
+        { label: 'Services', path: '/pricing' },
+        { label: 'Google Business Profile', path: '/services/google-business' }
+      ]} />
       <SEO
         title="Google Business Profile Optimization"
         description="Professional Google Business Profile optimization to dominate local search results. Profile setup, review management, and ongoing optimization to attract more local customers."
@@ -80,6 +103,8 @@ export default function GoogleBusiness() {
           </div>
         </div>
       </section>
+
+      <RelatedServices services={relatedServices} title="Complete Local Marketing" />
 
       <section className="section-padding bg-primary-600 text-white">
         <div className="container-custom text-center">

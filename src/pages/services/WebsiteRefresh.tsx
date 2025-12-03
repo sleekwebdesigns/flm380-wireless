@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO'
+import Breadcrumb from '../../components/Breadcrumb'
+import RelatedServices from '../../components/RelatedServices'
 
 export default function WebsiteRefresh() {
   const features = [
@@ -61,8 +63,29 @@ export default function WebsiteRefresh() {
     }
   }
 
+  const relatedServices = [
+    {
+      title: 'SEO Services',
+      description: 'Every new website needs proper SEO optimization to rank well on Google.',
+      icon: '📈',
+      link: '/services/seo',
+      anchorText: 'Learn about our SEO services'
+    },
+    {
+      title: 'AI Solutions',
+      description: 'Add AI-powered chatbots and automation to enhance your new website.',
+      icon: '🤖',
+      link: '/services/ai-solutions',
+      anchorText: 'Explore AI integration'
+    }
+  ]
+
   return (
     <>
+      <Breadcrumb items={[
+        { label: 'Services', path: '/pricing' },
+        { label: 'Website Refresh', path: '/services/website-refresh' }
+      ]} />
       <SEO
         title="Website Refresh & Design Services Brooklyn | 15-Day Delivery"
         description="Refresh your website in 15 days. Custom WordPress development, e-commerce solutions, and responsive design. Serving Brooklyn, Crown Heights, Park Slope & NYC. Free consultation."
@@ -140,7 +163,7 @@ export default function WebsiteRefresh() {
                   <div>
                     <h3 className="font-bold text-lg mb-2">Design & Development</h3>
                     <p className="text-gray-600">
-                      We create a beautiful, functional website tailored to your brand and business needs.
+                      We create a beautiful, functional website tailored to your brand and business needs. Every site includes basic <Link to="/services/seo" className="text-primary-600 hover:text-primary-700 font-medium">SEO optimization</Link> to help you rank on Google.
                     </p>
                   </div>
                 </div>
@@ -306,6 +329,8 @@ export default function WebsiteRefresh() {
           </div>
         </div>
       </section>
+
+      <RelatedServices services={relatedServices} title="Enhance Your New Website" />
 
       <section className="section-padding bg-primary-600 text-white">
         <div className="container-custom text-center">

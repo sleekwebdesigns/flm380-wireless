@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO'
+import Breadcrumb from '../../components/Breadcrumb'
+import RelatedServices from '../../components/RelatedServices'
 
 export default function SEOServices() {
   const services = [
     {
       title: 'Local SEO',
-      description: 'Dominate local Brooklyn search results and attract nearby customers to your business.',
+      description: 'Dominate local Brooklyn search results and attract nearby customers. Includes Google Business Profile optimization.',
       icon: '📍',
       features: ['Google Business optimization', 'Local citations', 'Location-based keywords', 'Local link building']
     },
@@ -40,8 +42,29 @@ export default function SEOServices() {
     description: 'Comprehensive SEO services including local SEO, technical SEO, content strategy, and link building to improve search engine rankings.'
   }
 
+  const relatedServices = [
+    {
+      title: 'Website Refresh',
+      description: 'SEO works best with a modern, fast-loading website design.',
+      icon: '🎨',
+      link: '/services/website-refresh',
+      anchorText: 'View our website design services'
+    },
+    {
+      title: 'Google Business Profile',
+      description: 'Local SEO includes optimizing your Google Business Profile for maximum visibility.',
+      icon: '📍',
+      link: '/services/google-business',
+      anchorText: 'Learn about Google Business optimization'
+    }
+  ]
+
   return (
     <>
+      <Breadcrumb items={[
+        { label: 'Services', path: '/pricing' },
+        { label: 'SEO Services', path: '/services/seo' }
+      ]} />
       <SEO
         title="SEO Services Brooklyn | Rank Higher on Google | Local SEO NYC"
         description="Improve your Google rankings with proven SEO strategies. Local Brooklyn SEO, technical optimization, and content strategy. Serving Crown Heights, Park Slope & NYC. Free SEO audit."
@@ -217,6 +240,8 @@ export default function SEOServices() {
           </div>
         </div>
       </section>
+
+      <RelatedServices services={relatedServices} title="Complete SEO Solution" />
 
       <section className="section-padding bg-primary-600 text-white">
         <div className="container-custom text-center">
