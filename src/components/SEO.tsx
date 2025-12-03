@@ -14,7 +14,7 @@ export default function SEO({
   title,
   description,
   keywords,
-  image = '/og-image.jpg',
+  image = '/Sleek Web Designs logo.svg',
   url,
   type = 'website',
   schema
@@ -22,6 +22,7 @@ export default function SEO({
   const siteName = 'Sleek Web Designs'
   const fullTitle = title ? `${title} | ${siteName}` : siteName
   const canonicalUrl = url || `${window.location.origin}${window.location.pathname}`
+  const fullImageUrl = image.startsWith('http') ? image : `${window.location.origin}${image}`
 
   return (
     <Helmet>
@@ -34,13 +35,13 @@ export default function SEO({
       <meta property="og:description" content={description} />
       <meta property="og:type" content={type} />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={fullImageUrl} />
       <meta property="og:site_name" content={siteName} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content={fullImageUrl} />
 
       {schema && (
         <script type="application/ld+json">

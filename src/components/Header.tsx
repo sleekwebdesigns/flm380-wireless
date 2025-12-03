@@ -8,8 +8,12 @@ export default function Header() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="container-custom">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-display font-bold text-primary-600">Sleek Web Designs</span>
+          <Link to="/" className="flex items-center">
+            <img
+              src="/Sleek Web Designs logo.svg"
+              alt="Sleek Web Designs"
+              className="h-10 sm:h-12 w-auto"
+            />
           </Link>
 
           <div className="hidden lg:flex items-center space-x-8">

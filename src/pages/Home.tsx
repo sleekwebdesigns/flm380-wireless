@@ -66,7 +66,7 @@ export default function Home() {
     '@type': 'Organization',
     name: 'Sleek Web Designs',
     url: 'https://www.sleekwebdesigns.com',
-    logo: 'https://www.sleekwebdesigns.com/logo.png',
+    logo: 'https://www.sleekwebdesigns.com/Sleek Web Designs logo.svg',
     description: 'Brooklyn\'s premier web design and digital marketing agency',
     address: {
       '@type': 'PostalAddress',

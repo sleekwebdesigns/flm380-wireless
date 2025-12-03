@@ -8,7 +8,11 @@ export default function Footer() {
       <div className="container-custom section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div>
-            <h3 className="text-white text-xl font-display font-bold mb-4">Sleek Web Designs</h3>
+            <img
+              src="/Sleek Web Designs logo.svg"
+              alt="Sleek Web Designs"
+              className="h-10 w-auto mb-4 brightness-0 invert"
+            />
             <p className="text-sm mb-4">
               Brooklyn's premier web design and digital marketing agency. Creating beautiful, effective websites for over 5 years.
             </p>
