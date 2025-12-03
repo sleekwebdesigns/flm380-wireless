@@ -258,6 +258,43 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl sm:text-4xl font-display font-bold mb-4">
+              Visit Our Office
+            </h2>
+            <p className="text-xl text-gray-600">
+              405 Rogers Ave Suite 101, Brooklyn, NY 11225
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.5040582875777!2d-73.95618218784436!3d40.66286147128177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25d4f5676a9ff%3A0x158ed79c99eb8e4e!2sSleek%20Web%20Designs!5e0!3m2!1sen!2sus!4v1764740535122!5m2!1sen!2sus"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Sleek Web Designs Location"
+              />
+            </div>
+            <div className="text-center mt-6">
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=Sleek+Web+Designs,405+Rogers+Ave+Suite+101,Brooklyn,NY+11225"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                Get Directions
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
