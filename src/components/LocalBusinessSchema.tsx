@@ -31,7 +31,6 @@ export default function LocalBusinessSchema({
       height: BUSINESS_INFO.image.height
     },
     telephone: BUSINESS_INFO.contact.phoneRaw,
-    email: BUSINESS_INFO.contact.email,
     priceRange: BUSINESS_INFO.priceRange,
     foundingDate: BUSINESS_INFO.founded,
     address: {

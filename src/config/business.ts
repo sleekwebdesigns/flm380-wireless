@@ -17,7 +17,6 @@ export const BUSINESS_INFO = {
   contact: {
     phone: '(347) 416-5655',
     phoneRaw: '+13474165655',
-    email: 'info@sleekwebdesigns.com',
     website: 'https://www.sleekwebdesigns.com'
   },
 

@@ -76,18 +76,6 @@ export default function NAP({
           <span itemProp="postalCode">{BUSINESS_INFO.address.zipCode}</span>
         </a>
       </div>
-      {BUSINESS_INFO.contact.email && (
-        <div>
-          <h4 className="font-semibold text-sm text-gray-500 uppercase mb-2">Email</h4>
-          <a
-            href={`mailto:${BUSINESS_INFO.contact.email}`}
-            className="hover:text-primary-600 transition-colors"
-            itemProp="email"
-          >
-            {BUSINESS_INFO.contact.email}
-          </a>
-        </div>
-      )}
     </div>
   )
 

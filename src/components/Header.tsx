@@ -16,38 +16,32 @@ export default function Header() {
             />
           </Link>
 
-          <div className="hidden lg:flex items-center space-x-8">
-            <Link to="/services/website-refresh" className="text-gray-700 hover:text-primary-600 transition-colors">
+          <div className="hidden lg:flex items-center space-x-10">
+            <Link to="/services/website-refresh" className="text-lg font-semibold text-gray-700 hover:text-primary-600 hover:scale-105 transition-all duration-200 tracking-wide">
               Website Refresh
             </Link>
-            <Link to="/services/seo" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link to="/services/seo" className="text-lg font-semibold text-gray-700 hover:text-primary-600 hover:scale-105 transition-all duration-200 tracking-wide">
               SEO Services
             </Link>
-            <Link to="/services/ai-solutions" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link to="/services/ai-solutions" className="text-lg font-semibold text-gray-700 hover:text-primary-600 hover:scale-105 transition-all duration-200 tracking-wide">
               AI Solutions
             </Link>
-            <Link to="/services/google-business" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link to="/services/google-business" className="text-lg font-semibold text-gray-700 hover:text-primary-600 hover:scale-105 transition-all duration-200 tracking-wide">
               Google Business
             </Link>
-            <Link to="/portfolio" className="text-gray-700 hover:text-primary-600 transition-colors">
-              Portfolio
-            </Link>
-            <Link to="/pricing" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link to="/pricing" className="text-lg font-semibold text-gray-700 hover:text-primary-600 hover:scale-105 transition-all duration-200 tracking-wide">
               Pricing
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link to="/about" className="text-lg font-semibold text-gray-700 hover:text-primary-600 hover:scale-105 transition-all duration-200 tracking-wide">
               About
-            </Link>
-            <Link to="/blog" className="text-gray-700 hover:text-primary-600 transition-colors">
-              Blog
             </Link>
           </div>
 
           <div className="hidden lg:flex items-center space-x-4">
-            <a href="tel:3474165655" className="text-gray-700 hover:text-primary-600 font-medium">
+            <a href="tel:3474165655" className="text-lg font-semibold text-gray-700 hover:text-primary-600 transition-colors">
               (347) 416-5655
             </a>
-            <Link to="/contact" className="btn btn-primary">
+            <Link to="/contact" className="btn btn-primary text-lg px-6 py-3">
               Get Started
             </Link>
           </div>
@@ -70,34 +64,28 @@ export default function Header() {
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t">
             <div className="flex flex-col space-y-4">
-              <Link to="/services/website-refresh" className="text-gray-700 hover:text-primary-600 transition-colors">
+              <Link to="/services/website-refresh" className="text-lg font-semibold text-gray-700 hover:text-primary-600 transition-colors">
                 Website Refresh
               </Link>
-              <Link to="/services/seo" className="text-gray-700 hover:text-primary-600 transition-colors">
+              <Link to="/services/seo" className="text-lg font-semibold text-gray-700 hover:text-primary-600 transition-colors">
                 SEO Services
               </Link>
-              <Link to="/services/ai-solutions" className="text-gray-700 hover:text-primary-600 transition-colors">
+              <Link to="/services/ai-solutions" className="text-lg font-semibold text-gray-700 hover:text-primary-600 transition-colors">
                 AI Solutions
               </Link>
-              <Link to="/services/google-business" className="text-gray-700 hover:text-primary-600 transition-colors">
+              <Link to="/services/google-business" className="text-lg font-semibold text-gray-700 hover:text-primary-600 transition-colors">
                 Google Business
               </Link>
-              <Link to="/portfolio" className="text-gray-700 hover:text-primary-600 transition-colors">
-                Portfolio
-              </Link>
-              <Link to="/pricing" className="text-gray-700 hover:text-primary-600 transition-colors">
+              <Link to="/pricing" className="text-lg font-semibold text-gray-700 hover:text-primary-600 transition-colors">
                 Pricing
               </Link>
-              <Link to="/about" className="text-gray-700 hover:text-primary-600 transition-colors">
+              <Link to="/about" className="text-lg font-semibold text-gray-700 hover:text-primary-600 transition-colors">
                 About
               </Link>
-              <Link to="/blog" className="text-gray-700 hover:text-primary-600 transition-colors">
-                Blog
-              </Link>
-              <a href="tel:3474165655" className="text-gray-700 hover:text-primary-600 font-medium">
+              <a href="tel:3474165655" className="text-lg font-semibold text-gray-700 hover:text-primary-600 transition-colors">
                 (347) 416-5655
               </a>
-              <Link to="/contact" className="btn btn-primary">
+              <Link to="/contact" className="btn btn-primary text-lg">
                 Get Started
               </Link>
             </div>
