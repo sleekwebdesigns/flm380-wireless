@@ -77,7 +77,6 @@ export default function Home() {
       addressCountry: 'US'
     },
     telephone: '+13474165655',
-    email: 'hello@sleekwebdesigns.com',
     sameAs: []
   }
 

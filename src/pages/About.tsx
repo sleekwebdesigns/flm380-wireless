@@ -99,8 +99,13 @@ export default function About() {
               <a href="tel:3474165655" className="btn btn-primary">
                 Call (347) 416-5655
               </a>
-              <a href="mailto:hello@sleekwebdesigns.com" className="btn btn-secondary">
-                Email Us
+              <a
+                href="https://maps.app.goo.gl/UDwkRb9CDRPJEtFG7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary"
+              >
+                Get Directions
               </a>
             </div>
           </div>

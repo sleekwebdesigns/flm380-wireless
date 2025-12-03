@@ -65,7 +65,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact Us - Get Your Free Consultation"
-        description="Contact Sleek Web Designs for a free consultation. Call (347) 416-5655 or email hello@sleekwebdesigns.com. Located at 405 Rogers Ave Suite 101, Brooklyn, NY."
+        description="Contact Sleek Web Designs for a free consultation. Call (347) 416-5655. Located at 405 Rogers Ave Suite 101, Brooklyn, NY 11225."
         keywords="contact Sleek Web Designs, Brooklyn web design contact, free consultation, web design quote"
       />
 
@@ -226,17 +226,16 @@ export default function Contact() {
                     </a>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-600 mb-1">Email</p>
-                    <a href="mailto:hello@sleekwebdesigns.com" className="text-lg font-semibold text-primary-600 hover:text-primary-700">
-                      hello@sleekwebdesigns.com
-                    </a>
-                  </div>
-                  <div>
                     <p className="text-sm text-gray-600 mb-1">Address</p>
-                    <p className="text-gray-700">
+                    <a
+                      href="https://maps.app.goo.gl/UDwkRb9CDRPJEtFG7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 hover:text-primary-600 transition-colors"
+                    >
                       405 Rogers Ave Suite 101<br />
                       Brooklyn, NY 11225
-                    </p>
+                    </a>
                   </div>
                 </div>
               </div>
