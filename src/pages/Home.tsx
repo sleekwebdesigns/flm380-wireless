@@ -106,7 +106,7 @@ export default function Home() {
               <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50 text-lg px-8 py-4">
                 Get Your Free Consultation
               </Link>
-              <a href="tel:3474165655" className="btn btn-secondary border-white text-white hover:bg-white hover:text-primary-600 text-lg px-8 py-4">
+              <a href="tel:3474165655" className="btn btn-outline-white text-lg px-8 py-4">
                 Call (347) 416-5655
               </a>
             </div>
@@ -313,7 +313,7 @@ export default function Home() {
             <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50 text-lg px-8 py-4">
               Get Started Now
             </Link>
-            <Link to="/pricing" className="btn btn-secondary border-white text-white hover:bg-white hover:text-primary-600 text-lg px-8 py-4">
+            <Link to="/pricing" className="btn btn-outline-white text-lg px-8 py-4">
               View Pricing
             </Link>
           </div>

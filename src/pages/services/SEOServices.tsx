@@ -62,7 +62,7 @@ export default function SEOServices() {
               <Link to="/contact" className="btn bg-white text-primary-600 hover:bg-primary-50">
                 Get Free SEO Audit
               </Link>
-              <a href="tel:3474165655" className="btn btn-secondary border-white text-white hover:bg-white hover:text-primary-600">
+              <a href="tel:3474165655" className="btn btn-outline-white">
                 Call (347) 416-5655
               </a>
             </div>
